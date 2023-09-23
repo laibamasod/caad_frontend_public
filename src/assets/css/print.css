@@ -1,0 +1,42 @@
+/* Adjust the layout for printing */
+@media print {
+
+    .printShow {
+        page-break-inside: avoid;
+        /* Avoid splitting cards across pages */
+    }
+
+    .card-header {
+        background-color: white;
+    }
+
+    .printOff {
+        display: none;
+    }
+
+    @page {
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    /* Disable background graphics */
+    body {
+        background: none;
+    }
+
+    /* Define A4 page size */
+    @page {
+        size: A4 portrait;
+        margin: 1cm;
+        /* Adjust margins as needed */
+    }
+
+  
+
+
+
+    /* Add more styling adjustments as needed */
+}
